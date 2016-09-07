@@ -1,0 +1,26 @@
+{
+  "name": "gcenter",
+  "description": "",
+  "main": "server.js",
+  "authors": [
+    "Fabricio <fabricio_nathancpcx@hotmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Fabriciocpcx/ProjetosWeb",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "fontawesome#^4.6.3",
+    "angular-route": "^1.5.8",
+    "angular-resource": "^1.5.8",
+    "angular-animate": "^1.5.8"
+  }
+}

@@ -1,0 +1,26 @@
+<p ng-show="mensagem.length" class="alert alert-info">{{mensagem}}</p>
+
+<div class="row">
+    <div class="col-md-12">
+        <form>
+            <div class="input-group">
+                <span class="input-group-btn">
+                <a href="#/produtos/new" class="btn btn-primary">Novo Produto</a>
+                    </span>
+                <input class="form-control" placeholder="Buscar Produto" ng-model="filtro" ng-model-options="{debounce: 200}">
+            </div>
+
+        </form>
+    </div>
+</div>
+
+<div class="row">
+    <meu-painel class="col-md-2 painel-animado" ng-repeat="produto in produtos | filter: filtro" titulo="{{produto.nome}}">
+
+        <img class="img-responsive center-block" src="{{produto.url}}" alt="{{produto.nome}}">
+
+        <a class="btn btn-primary btn-block" href="#/produtos/edit/{{produto._id}}">Editar</a>
+
+        <meu-botao-perigo nome="Remover" acao="remover(produto)"></meu-botao-perigo>
+    </meu-painel>
+</div>

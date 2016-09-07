@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Gcenter</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css"></link>
+  <script src="vendor/jquery/dist/jquery.min.js"></script>
+  <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="css/efeitos.css">
+</head>
+
+<body ng-app="gCenter">
+
+  <div class="jumbotron" style="background-image:url(img/madeira.jpg)">
+    <div class="container text-center">
+      <img src="img/logo1.png" alt="Smiley face" height="150" width="260">
+      <p>Instrumentos Musicais</p>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Inicio</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Promoções</a></li>
+          <li><a href="#">Cordas</a></li>
+          <li><a href="#">Percussão</a></li>
+          <li><a href="#">Teclas</a></li>
+          <li><a href="#">Sopro</a></li>
+          <li><a href="#">Acessórios</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-edit"></span> Edição</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Minha Conta</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Carrinho</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <ng-view></ng-view>
+
+  <footer class="container-fluid text-center">
+    <p>Atendimento ao Cliente </p>
+    <form class="form-inline">Informe seu email :
+      <input type="email" class="form-control" size="50" placeholder="Email ">
+      <button type="button" class="btn btn-danger">Enviar</button>
+    </form>
+  </footer>
+
+  <script src="vendor/angular/angular.js"></script>
+  <script src="vendor/angular-route/angular-route.js"></script>
+  <script src="vendor/angular-resource/angular-resource.min.js"></script>
+
+
+  <script src="js/main.js"></script>
+
+  <script src="js/routes/routes.js"></script>
+  <script src="js/directives/minhas_diretivas.js"></script>
+  <!--<script src="js/services/meus-servicos.js"></script>!-->
+  <script src="js/controllers/produtos-controller.js"></script>
+  <script src="js/controllers/produto-controller.js"></script>
+  <script src="js/controllers/grupos-controller.js"></script>
+
+</body>
+
+</html>
