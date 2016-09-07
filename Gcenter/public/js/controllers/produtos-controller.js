@@ -15,7 +15,7 @@ angular.module('gCenter')
 
       $scope.remover = remover;
       function remover (produto) {
-        $http.delete('api/produtos/' + id)
+        $http.delete('api/produtos/' + produto._id)
           .success(function () {
             console.log('usuario deletado com sucesso');
 

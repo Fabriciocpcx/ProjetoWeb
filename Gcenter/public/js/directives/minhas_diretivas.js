@@ -4,6 +4,7 @@ angular.module('minhasDiretivas', [])
         var directive = {};
 
         directive.retrict = 'EA';
+        directive.transclude = true;
 
         directive.scope = {
             titulo: '@',
