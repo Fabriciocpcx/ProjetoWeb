@@ -11,5 +11,4 @@ module.exports = function (app) {
         .delete(controller.deleteProduto)
         .put(controller.updateProduto);
 
-    app.get('/api/grupos', controller.listaGrupos);
 }
