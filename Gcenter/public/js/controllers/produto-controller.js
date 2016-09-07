@@ -14,6 +14,7 @@ angular.module('gCenter')
             $scope.mensagem = 'Não foi possível obter o Produto';
           });
       }
+
       $scope.submeter = submeter;
       function submeter () {
         if ($scope.formulario.$valid) {

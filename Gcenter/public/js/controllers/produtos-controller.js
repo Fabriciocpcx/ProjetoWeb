@@ -17,11 +17,11 @@ angular.module('gCenter')
       function remover (produto) {
         $http.delete('api/produtos/' + produto._id)
           .success(function () {
-            console.log('usuario deletado com sucesso');
+            console.log('produto deletado com sucesso');
 
             var indice = $scope.produtos.indexOf(produto);
             $scope.produtos.splice(indice, 1);
-            $scope.mensagem = produto.titulo + ' Removido com sucesso';
+            $scope.mensagem = produto.nome + ' Removido com sucesso';
           }
         )
           .error(function (statusText) {
