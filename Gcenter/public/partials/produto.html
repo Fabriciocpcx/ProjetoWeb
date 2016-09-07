@@ -1,5 +1,5 @@
 <div class="page-header text-center">
-    <h1>{{produto.nome}}</h1>
+    <h1>{{produto.nome}}</h1> 
 </div>
 <p ng-show="mensagem.length" class="alert alert-info">{{mensagem}}</p>
 
@@ -32,10 +32,6 @@
             <span class="form-control alert-danger" ng-show="formulario.valor.$error.required && formulario.$submitted">Preço Obrigatorio</span>
 
         </div>
-
-        
-
-      
 
         <button  type="submit" class="btn btn-primary" ng-disabled="formulario.$invalid">
             Salvar
