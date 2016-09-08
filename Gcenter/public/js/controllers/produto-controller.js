@@ -5,7 +5,7 @@ angular.module('gCenter')
       $scope.mensagem = '';
 
       if ($routeParams.produtoId) {
-        $http.get('api/produtos/' + $routeParams.id)
+        $http.get('api/produtos/' + $routeParams.produtoId)
           .success(function (produto) {
             $scope.produto = produto;
           })
